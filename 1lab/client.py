@@ -20,11 +20,14 @@ class AudioClient:
         self.client_socket.send(json.dumps(command).encode("utf-8"))
 
     def receive_json_data(self):
-        data = self.client_socket.recv(4096)
-        try:
-            return json.loads(data.decode("utf-8"))
-        except (UnicodeDecodeError, json.JSONDecodeError):
-            return {"error": "Ошибка обработки ответа от сервера."}
+        data = b''
+        while True:
+            data += self.client_socket.recv(100)
+            try:
+                return json.loads(data.decode("utf-8"))
+            except (UnicodeDecodeError, json.JSONDecodeError):
+                pass
+                # return {"error": "Ошибка обработки ответа от сервера."}
 
     def list_files(self):
         self.send_command({"action": "list"})
