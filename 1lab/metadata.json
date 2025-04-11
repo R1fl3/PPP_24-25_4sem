@@ -1,1 +1,12 @@
-[{"name": "example.mp3", "duration": 31.347, "format": "mp3"}, {"name": "sample1.mp3", "duration": 5.0, "format": "mp3"}]
+[
+    {
+        "name": "example.mp3",
+        "duration": 31.347,
+        "format": "mp3"
+    },
+    {
+        "name": "sample1.mp3",
+        "duration": 5.0,
+        "format": "mp3"
+    }
+]
