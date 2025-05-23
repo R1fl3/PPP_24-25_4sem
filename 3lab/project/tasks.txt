@@ -1,0 +1,10 @@
+{"action": "encode", "text": "hello world", "key": "123"}
+{"action": "encode", "text": "the quick brown fox", "key": "abc"}
+{"action": "encode", "text": "lorem ipsum dolor sit amet", "key": "xyz"}
+{"action": "decode", "encoded_data": "0GntYA==", "key": "123", "huffman_codes": {"e":"000","d":"001","r":"010","w":"011","l":"10","o":"110","h":"1110"," ":"1111"}, "padding": 0}
+{"action": "encode", "text": "another one bites the dust", "key": "qwe"}
+{"action": "decode", "encoded_data": "2zNZAA==", "key": "abc", "huffman_codes": {"t":"00","x":"01","q":"100","u":"101","f":"110","b":"1110","r":"11110","o":"11111"," ":"000"}, "padding": 2}
+{"action": "encode", "text": "encryption and compression", "key": "987"}
+{"action": "decode", "encoded_data": "5ZnvcQ==", "key": "xyz", "huffman_codes": {"l":"0","s":"10","d":"110"," ":"1110","e":"1111"}, "padding": 1}
+{"action": "encode", "text": "openai rocks", "key": "zxc"}
+{"action": "decode", "encoded_data": "6ydsfA==", "key": "qwe", "huffman_codes": {"a":"00","d":"01"," ":"10","n":"110","e":"1110","b":"1111"}, "padding": 1}
